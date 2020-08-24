@@ -8,7 +8,7 @@ ganho = 0.5
 taxa_amostragem = 8000
 
 
-with open('alo.pcm', 'rb') as f:
+with open('teste_audio.pcm', 'rb') as f:
     buf = f.read()
     data_i = np.frombuffer(buf, dtype='int16')
     data_len = len(data_i)
@@ -19,6 +19,9 @@ with open('alo.pcm', 'rb') as f:
     for i in range(data_len):
         data_o[i] = data_i[i] * ganho
 
+    with open(r'test.txt', 'w') as f:#escrevendo o array no arquivo
+        f.write(" ".join(map(str, data_o)))
+
     t = np.arange(0, data_len/taxa_amostragem, 1 / taxa_amostragem)
 
     plt.plot(t, data_i[: len(t)], label="Input")
@@ -27,5 +30,7 @@ with open('alo.pcm', 'rb') as f:
     plt.xlabel("Time [s]")
     plt.ylabel("Amplitude")
     plt.show()
+
+
 
 
