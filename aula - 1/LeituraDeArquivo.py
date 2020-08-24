@@ -19,8 +19,9 @@ with open('teste_audio.pcm', 'rb') as f:
     for i in range(data_len):
         data_o[i] = data_i[i] * ganho
 
-    with open(r'test.txt', 'w') as f:#escrevendo o array no arquivo
-        f.write(" ".join(map(str, data_o)))
+    with open(r'result.pcm', 'wb') as f:
+        for d in data_o:
+            f.write(d)
 
     t = np.arange(0, data_len/taxa_amostragem, 1 / taxa_amostragem)
 
