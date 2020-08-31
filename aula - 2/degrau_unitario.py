@@ -6,15 +6,13 @@ n = np.arange(-10, 10, 1)
 i = 0
 
 for i in n:
-    if i == 0:
+    if i >= 0:
         meuVetor.append(1)
     else:
         meuVetor.append(0)
 
-
-# impulso
-#sig_imp  =  np . zeros (( sample_rate , 1 ))
-#sig_imp [ t  ==  0 ] =  1
+#sig_deg  =  np . zeros (( sample_rate , 1 ))
+#sig_deg [ t  >  0 ] =  1
 
 plt.plot(n, meuVetor)
 plt.grid()
