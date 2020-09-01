@@ -8,7 +8,6 @@ a = 0.5
 
 exp = np.exp2(t)
 
-
-plt.plot(t, exp)
 plt.grid()
+plt.stem(t,exp,use_line_collection=True)
 plt.show()

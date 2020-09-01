@@ -14,6 +14,6 @@ for i in n:
 #sig_deg  =  np . zeros (( sample_rate , 1 ))
 #sig_deg [ t  >  0 ] =  1
 
-plt.plot(n, meuVetor)
+plt.stem(n, meuVetor)
 plt.grid()
 plt.show()

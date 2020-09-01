@@ -16,6 +16,6 @@ for i in n:
 #sig_imp  =  np . zeros (( sample_rate , 1 ))
 #sig_imp [ t  ==  0 ] =  1
 
-plt.plot(n, meuVetor)
+plt.stem(n, meuVetor)
 plt.grid()
 plt.show()

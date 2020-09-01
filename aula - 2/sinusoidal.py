@@ -2,13 +2,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 meuVetor = []
-n = np.arange(0, 20, 1)
-i = 0
+n = np.arange(-20, 20, 1)
 
-A = 1
 
-sen = np.sin(n)
+f = 100
+Fs = 8000
 
-plt.plot(n, sen)
+sen = np.sin(2 * np.pi * n * (f / Fs))
+
+
+plt.stem(n, sen)
 plt.grid()
 plt.show()
