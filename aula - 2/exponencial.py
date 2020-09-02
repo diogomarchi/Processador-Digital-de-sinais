@@ -8,6 +8,10 @@ a = 0.5
 
 exp = np.exp2(t)
 
+with open(r'exponencial.pcm', 'wb') as f:
+    for d in exp:
+        f.write(d.astype(np.int16))
+
 plt.grid()
-plt.stem(t,exp,use_line_collection=True)
+plt.stem(t, exp, use_line_collection=True)
 plt.show()
