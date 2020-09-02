@@ -17,8 +17,17 @@ tama_delay = int(n2)
 vetor_delay = np.zeros((tama_delay, 1))
 
 #Definindo a entrada
-entrada = np.zeros((2*tama_delay, 1))
-entrada[0, 0] = 1
+
+with open('C:/Users/Diogo/Documents/FACULDADE-MATERIAS/Processador-Digital-de-sinais/aula-2/impulso_unitario.pcm', 'rb') as f:
+    buf = f.read()
+    data_i = np.frombuffer(buf, dtype='int16')
+    data_len = len(data_i)
+
+    entrada = np.zeros_like(data_i)
+
+    for i in range(data_len):
+        entrada[i] = data_i[i]
+
 
 #definindo o impulso unitário
 tama_loop = len(entrada);
@@ -27,24 +36,14 @@ vet_saida = np.zeros((tama_loop, 1))
 for j in range(tama_loop):
     input = entrada[j, 0]
     vetor_delay[0, 0] = input
-    y = a0 * vetor_delay[0, 0] + a1 * vetor_delay[int(n1), 0] + a2 * vetor_delay[int(n2-1), 0]
-    #for k in range(tama_delay-2):
-        #vetor_delay[tama_delay-k, 0] = vetor_delay[tama_delay-k-1, 0]
-    #vet_saida[j] = y
+    y = a0 * vetor_delay[0, 0] + a1 * vetor_delay[int(n1-1), 0] + a2 * vetor_delay[int(n2-1), 0]
+    for k in range(tama_delay-1):
+        vetor_delay[tama_delay-k-1, 0] = vetor_delay[tama_delay-k-2, 0]
+    vet_saida[j, 0] = y
 
-fig = plt.figure(1)
-
-a = fig.add_subplot(2, 1, 1)
-a.plot(t2, vet_saida)
-a.set_xlabel("(a)")
-
-a = fig . add_subplot(2, 1, 2)
-a.radical(t2, vet_saida, "k-", "ko", "k-")
-a.set_xlabel("(b)")
-
+plt.stem(vet_saida)
+plt.title('delay teste')
 plt.show()
-
-
 
 '''
 if __name__ == "__main__":
