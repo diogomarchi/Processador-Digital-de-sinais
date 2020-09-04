@@ -2,49 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df91bbe3-f67d-4cde-a14e-2c21fae422c4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../aula - 1/.idea/aula - 1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 1/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 1/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 1/LeituraDeArquivo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 1/alo.pcm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 1/dtmf.pcm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 1/exem_proces.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 1/result.pcm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 1/test.pcm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 1/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 1/teste" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 1/teste_audio.pcm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 2/.idea/aula - 2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 2/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 2/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 2/T2_1_murm_(R).pcm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 2/amostra_lec.pcm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 2/amostragem.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 2/degrauUnitario.pcm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 2/degrau_unitario.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 2/exponencial.pcm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 2/exponencial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 2/impulsoUnitario" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 2/impulso_unitario.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 2/sinusoidal.pcm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 2/sinusoidal.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 2/voz_ruido2_.pcm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 2/voz_ruido3_.pcm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 2/voz_ruido_.pcm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 3/.idea/aula - 3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 3/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 3/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 3/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 3/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula - 3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 3/eco.py" beforeDir="false" afterPath="$PROJECT_DIR$/../aula - 3/eco.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula - 3/wn.pcm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-2/.idea/aula - 2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-2/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-2/impulsoUnitario" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-2/impulso_unitario.py" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-2/impulso_unitario.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eco.py" beforeDir="false" afterPath="$PROJECT_DIR$/eco.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/eco.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="20" column="113" selection-start-line="20" selection-start-column="113" selection-end-line="20" selection-end-column="113" />
+            <state relative-caret-position="102">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -81,6 +45,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/../aula-2/impulso_unitario.py" />
         <option value="$PROJECT_DIR$/eco.py" />
       </list>
     </option>
@@ -97,7 +62,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -109,10 +73,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../aula-2/degrau_unitario.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -170,13 +135,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -191,10 +157,29 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../aula-2/impulso_unitario.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../aula-2/degrau_unitario.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/eco.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="20" column="113" selection-start-line="20" selection-start-column="113" selection-end-line="20" selection-end-column="113" />
+        <state relative-caret-position="102">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
