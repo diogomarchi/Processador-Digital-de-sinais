@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df91bbe3-f67d-4cde-a14e-2c21fae422c4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../aula-2/.idea/aula - 2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula-2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-2/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula-2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula-2/impulsoUnitario" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula-2/impulso_unitario.py" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-2/impulso_unitario.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eco.py" beforeDir="false" afterPath="$PROJECT_DIR$/eco.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saidaEco.pcm" beforeDir="false" afterPath="$PROJECT_DIR$/saidaEco.pcm" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/eco.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state relative-caret-position="-267">
+              <caret line="20" column="91" selection-start-line="20" selection-start-column="91" selection-end-line="20" selection-end-column="91" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -178,8 +174,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eco.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        <state relative-caret-position="90">
+          <caret line="20" column="91" selection-start-line="20" selection-start-column="91" selection-end-line="20" selection-end-column="91" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

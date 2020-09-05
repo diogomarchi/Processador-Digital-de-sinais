@@ -18,7 +18,7 @@ a2 = 0.2
 
 #Definindo a entrada
 
-with open('C:/Users/Diogo/Documents/FACULDADE-MATERIAS/Processador-Digital-de-sinais/aula-1/alo.pcm', 'rb') as f:
+with open('C:/Users/Diogo/Documents/FACULDADE-MATERIAS/Processador-Digital-de-sinais/aula-1/teste_audio.pcm', 'rb') as f:
     buf = f.read()
     data_i = np.frombuffer(buf, dtype='int16')
     data_len = len(data_i)
@@ -48,7 +48,7 @@ plt.show()
 
 with open('saidaEco.pcm', 'wb') as f:
     for d in vet_saida:
-        f.write(d)
+        f.write(d.astype(np.int16))
 
 
 
