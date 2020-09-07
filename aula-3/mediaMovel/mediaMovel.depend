@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1599442414 source:c:\users\diogo\documents\faculdade-materias\processador-digital-de-sinais\aula-3\mediamovel\main.c
+	<stdio.h>
+	<stdlib.h>
+
