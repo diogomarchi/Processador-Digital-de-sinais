@@ -5,20 +5,19 @@ sample_rate = 8000
 media_len = 9
 media_buf = np.zeros(media_len)
 
-with open("wn_.pcm", 'rb') as f:
-    buf = f.read()
-    data_i = np.frombuffer(buf, dtype='int16')
-    data_len = len(data_i)
+with open("wn.pcm", 'rb') as f:
+    buf = f.read()                              ##le arquivo
+    data_i = np.frombuffer(buf, dtype='int16')  #coloca arquivo lido no vetor
+    data_len = len(data_i)                      #pega o tamanho do vetor
 
-    # replica do arquivo lido para salvar o resultado
-    data_o = np.zeros_like(data_i)
+    data_o = np.zeros_like(data_i)              #cria um vetor zerado fo tamanho da entradaa
 
-    for i in range(data_len):
-        media_buf[0] = data_i[i]
-        m = np.sum(media_buf)/media_len
-        data_o[i] = m
-        buf = media_buf[0:media_len-1]
-        media_buf[1:media_len] = buf
+    for i in range(data_len):                   #for de posicao do vetor para fazer a media
+        media_buf[0] = data_i[i]                #primeira posicao do vetor media, coloca a posicao atual do vetor de entrada
+        m = np.sum(media_buf)/media_len         #soma tudo e divide pelo tamanho
+        data_o[i] = m                           #coloca a media na posição do vetor
+        buf = media_buf[0:media_len-1]          #desloca
+        media_buf[1:media_len] = buf            #descloca
 
 # amostra de 100 ms
 t = np.arange(0, 0.1, 1 / sample_rate)
@@ -33,7 +32,7 @@ plt.ylabel("Amplitude")
 plt.show()
 
 
-file_name = "media_"+str(media_len)+"_result.pcm"
+file_name = "media_"+str(media_len)+"_resultado.pcm"
 with open(file_name, 'wb') as f:
     for d in data_o:
         f.write(d)
