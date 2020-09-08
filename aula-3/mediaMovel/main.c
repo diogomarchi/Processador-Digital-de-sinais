@@ -30,45 +30,38 @@ int main()
 
     FILE *arq;
     arq = fopen("wn1.pcm","rb");
-    fseek(arq, 0, SEEK_SET);
+
     if(arq == NULL){
-        printf("deu cagada");
+        printf("deu erro ao abrir arquivo");
         return 0;
     }
 
-    int *ptr, cont = 0;
-    while(fread(ptr, sizeof(short),1,arq)){
-          printf("entrou no while \n");
-        cont ++;
+    FILE * output;
+    printf ( " Criando arquivo de gravacao \ n " );
+    output = fopen ( " media_resultado_c.pcm " , " wb " );
+    if (output == NULL ) {
+        printf ( " Erro ao criar arquivo de saída! " );
+        return  0 ;
     }
-    printf("cont: %d", cont);
-    int data_i[cont];
-/*
-    fseek(arq, 0, SEEK_SET);
-    printf("chegou aqui 2");
-    int data_i[cont];
-    int j = 0;
 
-    while(fread(ptr, sizeof(short),1,arq)){
-        data_i[j] = ptr;
-        j++;
-    }
-    */
-    // replica do arquivo lido para salvar o resultado
-    float data_o[cont];
-    zeraVetor(data_o,cont);
+    // buffer para leitura
+    short buff = 0;
 
-    for(int i = 0; i < cont; i ++){
-        media_buf[0] = data_i[i];
-        float m = somaTudo(media_buf, media_len)/media_len;
-        data_o[i] = m;
+    // tamanho do arquivo de entrada
+    int TAM = 0;
+
+    // le de dois em 2 bytes colocando valor em buff. quando acabar o inputuivo retorna 0
+    while(fread(&buff, 2, 1, arq) != 0){
+        TAM++;
+        media_buf[0] = buff;
+        short m = somaTudo(media_buf, media_len)/media_len;
+        fwrite(&m, 2, 1, output);
         deslocamento(media_buf, media_len);
     }
 
+    printf("Tamanho do arquivo de entrada %d bytes\n", 2*TAM);
+
     fclose(arq);
-
-    //gravar em arquivo
-
-
+    fclose(output);
     return 0;
 }
