@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df91bbe3-f67d-4cde-a14e-2c21fae422c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../aula-4/convolucao.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediaMovel.py" beforeDir="false" afterPath="$PROJECT_DIR$/mediaMovel.py" afterDir="false" />
+    <list default="true" id="2d61e8dd-6645-4168-8658-e3dc4859e709" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/convolucao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-3/mediaMovel.py" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-3/mediaMovel.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,12 +13,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eco.py">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/convolucao.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="192">
+              <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -26,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mediaMovel.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../aula-3/mediaMovel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+            <state>
+              <caret selection-end-line="37" selection-end-column="18" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -53,9 +53,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../aula-2/impulso_unitario.py" />
-        <option value="$PROJECT_DIR$/eco.py" />
-        <option value="$PROJECT_DIR$/mediaMovel.py" />
+        <option value="$PROJECT_DIR$/convolucao.py" />
       </list>
     </option>
   </component>
@@ -76,8 +74,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="aula-3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aula-3" type="462c0819:PsiDirectoryNode" />
+              <item name="aula-4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aula-4" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -86,7 +84,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../aula-3/mediaMovel.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -101,9 +99,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mediaMovel">
-    <configuration name="eco" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="aula - 3" />
+  <component name="RunManager">
+    <configuration name="convolucao" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="aula-4" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -114,28 +112,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/eco.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="mediaMovel" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="aula - 3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mediaMovel.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/convolucao.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -146,8 +123,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.mediaMovel" />
-        <item itemvalue="Python.eco" />
+        <item itemvalue="Python.convolucao" />
       </list>
     </recent_temporary>
   </component>
@@ -156,11 +132,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="df91bbe3-f67d-4cde-a14e-2c21fae422c4" name="Default Changelist" comment="" />
-      <created>1598971112316</created>
+      <changelist id="2d61e8dd-6645-4168-8658-e3dc4859e709" name="Default Changelist" comment="" />
+      <created>1600106246637</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1598971112316</updated>
+      <updated>1600106246637</updated>
     </task>
     <servers />
   </component>
@@ -168,59 +144,40 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.112351194" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3797054" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../aula-2/impulso_unitario.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../aula-2/degrau_unitario.py">
+    <entry file="file://$PROJECT_DIR$/../aula-3/mediaMovel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
+          <caret selection-end-line="37" selection-end-column="18" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eco.py">
+    <entry file="file://$PROJECT_DIR$/convolucao.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mediaMovel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        <state relative-caret-position="192">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
