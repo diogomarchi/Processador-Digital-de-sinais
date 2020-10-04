@@ -35,11 +35,11 @@ vet_saida = np.zeros((tama_loop, 1))            #cria vetor de saida do tamanho 
 vetor_amostra = np.zeros((int(L), 1))           #cria vetor de amostra com o tamanho especificado(8000)
 
 for j in range(tama_loop):
-    vetor_amostra[0] = entrada[j];                           #primeira posicao do vetor de amostra recebe o valor da posicao de entrada
-    y = a0 * vetor_amostra[0] + a1 * vetor_amostra[int(n1-1)] + a2 * vetor_amostra[int(n2-1)]  #faz as repetições
-    vet_saida[j] = y                                         #colocando as repetições no vetor de saida
-
-    vetor_amostra[1:int(n2)] = vetor_amostra[0:int(n2)-1]    #deslocamento
+            vetor_amostra[0] = entrada[j];                           #primeira posicao do vetor de amostra recebe o valor da posicao de entrada
+            y = a0 * vetor_amostra[0] + a1 * vetor_amostra[int(n1-1)] + a2 * vetor_amostra[int(n2-1)]  #faz as repetições
+            vet_saida[j] = y                                         #colocando as repetições no vetor de saida
+        
+            vetor_amostra[1:int(n2)] = vetor_amostra[0:int(n2)-1]    #deslocamento
 
 plt.stem(vet_saida)                                          #plota o vetor de saida
 plt.title('delay teste')
