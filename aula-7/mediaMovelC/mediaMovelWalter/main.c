@@ -28,7 +28,7 @@ int main()
 
 
    /* abre os arquivos de entrada e saida */
-  if ((in_file = fopen("sweep_20_200k.pcm","rb"))==NULL)
+  if ((in_file = fopen("sweep_20_3600.pcm","rb"))==NULL)
   {
     printf("\nErro: Nao abriu o arquivo de entrada\n");
     return 0;

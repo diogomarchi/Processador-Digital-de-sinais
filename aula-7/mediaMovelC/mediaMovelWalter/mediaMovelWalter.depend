@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1601465660 source:c:\users\diogo\documents\faculdade-materias\processador-digital-de-sinais\aula-7\mediamovelc\mediamovelwalter\main.c
+	<stdio.h>
+	<fcntl.h>
+	<io.h>
+	"coefs_mm_8.txt"
+
+1601464756 c:\users\diogo\documents\faculdade-materias\processador-digital-de-sinais\aula-7\mediamovelc\mediamovelwalter\coefs_mm_8.txt
+
