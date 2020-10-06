@@ -1,82 +1,69 @@
-/* Implementação de um filtro Média Móvel
+/* Implementação de um eco
 Lê um arquivo binário com amostras em 16bits
-Salva arquivo filtrado também em 16 bits
-Walter versão 1.0
+Salva arquivo com eco também em 16 bits
  */
 #include <stdio.h>
+
 #include <fcntl.h>
+
 #include <io.h>
 
+int main() {
+  float Fs, Ts, t1, t2, L, a0, a1, a2, y = 0;
+  int n1, n2;
+  Fs = 8000;
+  Ts = 1 / Fs;
+  t1 = 1.0 / 10;
+  t2 = 1.5 / 10;
+  L = 1 * Fs;
+  n1 = t1 * Fs;
+  n2 = t2 * Fs;
 
-#define NSAMPLES       8	// Tamanho da média
+  //Definição dos ganhos
+  a0 = 0.5;
+  a1 = 0.3;
+  a2 = 0.2;
 
-int main()
-{
-    float Fs, Ts, t1, t2, L , n1, n2, a0, a1, a2;
-    Fs = 8000;
-    Ts = 1 / Fs;
-    t1 = 1.0*10^-1;
-    t2 = 1.5*10^-1;
-    L = 1 * Fs;
-    n1 = t1*Fs;
-    n2 = t2*Fs;
+  FILE * in_file, * out_file;
+  int n_amost;
 
-    #Definição dos ganhos
-    a0 = 0.5;
-    a1 = 0.3;
-    a2 = 0.2;
+  short entrada, saida;
 
-   FILE *in_file, *out_file;
-   int i, n, n_amost;
-
-   short entrada, saida;
-   short sample[NSAMPLES] = {0x0};
-
-   float y=0;
-
-   //Carregando os coeficientes do filtro média móvel
-
-   float coef[NSAMPLES]={
-   				#include "coefs_mm_8.txt"
-   };
-
-
-   /* abre os arquivos de entrada e saida */
-  if ((in_file = fopen("teste_audio.pcm","rb"))==NULL)
-  {
+  /* abre os arquivos de entrada e saida */
+  if ((in_file = fopen("teste_audio.pcm", "rb")) == NULL) {
     printf("\nErro: Nao abriu o arquivo de entrada\n");
     return 0;
   }
-  if ((out_file = fopen("sai_teste_audio.pcm","wb"))==NULL)
-  {
+  if ((out_file = fopen("sai_teste_audio.pcm", "wb")) == NULL) {
     printf("\nErro: Nao abriu o arquivo de saida\n");
     return 0;
   }
 
-   // zera vetor de amostras
-   for (i=0; i<NSAMPLES; i++)
-        {
-        sample[i]=0;
-        }
-    float y = 0;
-   // execução do filtro
- do {
+  float sample[n2];
+  // zera vetor de amostras
+  for (int i = 0; i < n2; i++) {
+    sample[i] = 0;
+  }
+
+  do {
     //zera saída do filtro
-    y=0;
+    y = 0;
     //lê dado do arquivo
-    n_amost = fread(&entrada,sizeof(short),1,in_file);
+    n_amost = fread( & entrada, sizeof(short), 1, in_file);
     sample[0] = entrada;
-    y = a0 * sample[0] + a1 * sample[n1-1] + a2 * sample[n2-1]
-    saida[j] = y
-    for(int i = n_amost; i > 0; i ++){
-        sample[i] = sample[i-1];
+    y = a0 * sample[0] + a1 * sample[n1 - 1] + a2 * sample[n2 - 1];
+    saida = (short) y;
+
+    //deslocamento
+    for (int i = n2 - 1; i > 0; i--) {
+      sample[i] = sample[i - 1];
     }
-    fwrite(&saida,sizeof(short),1,out_file);
- } while (n_amost);
 
+    fwrite( & saida, sizeof(short), 1, out_file);
+  } while (n_amost);
 
-   //fecha os arquivos de entrada de saída
-   fclose(out_file);
-   fclose(in_file);
-   return 0;
+  //fecha os arquivos de entrada de saída
+  fclose(out_file);
+  fclose(in_file);
+  return 0;
 }
