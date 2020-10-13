@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 
 
 # A
-num = 3 * [1, 1.2]
-den = [1, -2.8, 0.45]
+num = 3 * [1, -1.2]
+den = [1, -1.4, 0.45]
 w, h = freqz(num, den)
 plt.subplot(3, 1, 1)
 plt.plot(w, 20 * np.log10(abs(h)), 'b')
@@ -13,7 +13,7 @@ plt.grid()
 
 # B
 num = [1, 0]
-den = [1, -6.2, 1.08]
+den = [1, -2.1, 1.08]
 w, h = freqz(num, den)
 plt.subplot(3, 1, 2)
 plt.plot(w, 20 * np.log10(abs(h)), 'g')
