@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c91826b-3d31-4925-a4bd-3950866e094c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/equacaoDiferenca/passaAlta.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../passaBaixa/equacaoDiferenca/passaBaixa.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../aula-3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../aula-3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../aula-4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../aula-4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../aula-4/convolucao.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../aula-4/convolucao.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercicio4Freqz/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercicio4Freqz/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercicio4Freqz/freqzExercicio4.py" beforeDir="false" afterPath="$PROJECT_DIR$/../exercicio4Freqz/freqzExercicio4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/equacaoDiferenca/serieFourierExponencial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/equacaoDiferenca/serieFourierImpulso.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../passaBaixa/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../passaBaixa/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../passaBaixa/bassaBaixaS_Z.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../passaBaixa/equacaoDiferenca/serieFourierImpulso.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../passaBaixa/equacaoDiferenca/passaBaixa.py" beforeDir="false" afterPath="$PROJECT_DIR$/../passaBaixa/equacaoDiferenca/passaBaixa.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

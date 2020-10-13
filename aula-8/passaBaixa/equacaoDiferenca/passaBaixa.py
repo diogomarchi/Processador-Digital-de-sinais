@@ -1,12 +1,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-sample_rate = 8000
+tam = 8000
 entrada = np.zeros(2)
 saida = 0
 
 Fc = 1000
-Fs = sample_rate
+Fs = 8000
 
 # calcula FC
 wc = 2*np.pi*Fc
@@ -34,7 +34,7 @@ with open('sweep_20_3600.pcm', 'rb') as f:
         entrada[1:2] = entrada[0:1]
 
 # amostra de 100 ms
-t = np.arange(0, data_len/sample_rate, 1 / sample_rate)
+t = np.arange(0, data_len/tam, 1 / tam)
 
 ###############
 #   plot
