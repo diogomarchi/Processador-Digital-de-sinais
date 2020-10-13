@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 
 # A
-num = 3 * [1, -1.2]
+num = [3, -3.2]
 den = [1, -1.4, 0.45]
 w, h = freqz(num, den)
 plt.subplot(3, 1, 1)
@@ -32,7 +32,7 @@ plt.figure(2)
 
 # A
 w = np.arange(0, np.pi, np.pi/1000)
-num_m = 3 * (1*np.exp(-1j*w) - 1.2)
+num_m = (3*np.exp(-1j*w) - 3.2)
 den_m = (np.exp(-1j*w) - 0.5) * (np.exp(-1j*w) - 0.9)
 plt.subplot(3, 1, 1)
 plt.plot(w*1000/(2*np.pi), 20 * np.log10(abs(num_m/den_m)), 'b')

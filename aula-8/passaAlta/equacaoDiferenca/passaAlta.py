@@ -1,12 +1,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-sample_rate = 8000
-input_buf = np.zeros(3)
-out_buf = np.zeros(2)
+tam = 8000
+entrada = np.zeros(3)
+saida = np.zeros(2)
 
 Fc = 1000
-Fs = sample_rate
+Fs = 8000
 
 # calcula FC
 wc = 2*np.pi*Fc
@@ -19,10 +19,8 @@ a = F1/(F1+wc)
 b = (2*wc)/(F1+wc)
 c = (F1-wc) / (F1+wc)
 
-print(a)
-print(b)
 
-with open('sweep_20_3600', 'rb') as f:
+with open('sweep_20_3600.pcm', 'rb') as f:
     buf = f.read()
     data_i = np.frombuffer(buf, dtype='int16')
     data_len = len(data_i)
@@ -31,18 +29,18 @@ with open('sweep_20_3600', 'rb') as f:
     data_o = np.zeros_like(data_i)
 
     for i in range(data_len):
-        input_buf[0] = data_i[i]
+        entrada[0] = data_i[i]
 
-        m = a*input_buf[0] - a*input_buf[2] - b*out_buf[0] + c*out_buf[1]
+        m = a*entrada[0] - a*entrada[2] - b*saida[0] + c*saida[1]
 
-        out_buf[1:len(out_buf)] = out_buf[0:len(out_buf)-1]
-        out_buf[0] = m     # y-1
+        saida[1:len(saida)] = saida[0:len(saida)-1]
+        saida[0] = m
 
         data_o[i] = m
-        input_buf[1:len(input_buf)] = input_buf[0:len(input_buf) - 1]
+        entrada[1:len(entrada)] = entrada[0:len(entrada) - 1]
 
 # amostra de 100 ms
-t = np.arange(0, data_len/sample_rate, 1 / sample_rate)
+t = np.arange(0, data_len/tam, 1 / tam)
 
 ###############
 #   plot
@@ -54,7 +52,7 @@ plt.ylabel("Amplitude")
 plt.show()
 
 
-file_name = "../media_manual_result.pcm"
+file_name = "../passaAltaSaida.pcm"
 with open(file_name, 'wb') as f:
     for d in data_o:
         f.write(d)
