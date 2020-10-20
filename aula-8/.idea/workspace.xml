@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aec3035-b0fa-4fd2-a5db-2b5f2f1a0d8b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../aula-1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-2/amostragem.py" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-2/amostragem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-3/mediaMovel.py" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-3/mediaMovel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-4/convolucao.py" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-4/convolucao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-6/polosEzeros.py" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-6/polosEzeros.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercicio4Freqz/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/exercicio4Freqz/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/passaBaixa/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/passaBaixa/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/respostaEmFreq/.idea/aula-8.iml" beforeDir="false" afterPath="$PROJECT_DIR$/respostaEmFreq/.idea/aula-8.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/respostaEmFreq/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/respostaEmFreq/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/respostaEmFreq/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/respostaEmFreq/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/respostaEmFreq/respostaEmFreq.py" beforeDir="false" afterPath="$PROJECT_DIR$/respostaEmFreq/respostaEmFreq.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,20 +22,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/respostaEmFreq/respostaEmFreq.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
-              <folding>
-                <element signature="e#41#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -72,7 +66,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/respostaEmFreq" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/exercicio4Freqz" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -139,35 +133,26 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="TODO" order="6" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/respostaEmFreq/respostaEmFreq.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
-          <folding>
-            <element signature="e#41#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/respostaEmFreq/respostaEmFreq.py" />
   </component>
 </project>

@@ -3,4 +3,6 @@ import numpy as np
 from zPlane import zplane
 b = np.array([1, 1.5, 2])
 a = np.array([1, 0, 0])
+zeros = np.roots(b)
+print(zeros)
 zplane (b, a)

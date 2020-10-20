@@ -1,5 +1,5 @@
-importar  numpy  como  np
-import  matplotlib . pyplot  como  plt
+import numpy  as  np
+import  matplotlib . pyplot  as  plt
 
 
 # Sinal analogico
@@ -19,14 +19,14 @@ xd = np.cos(2 * np.pi * n * f / Fs )
 
 
 # Plota
-fig = plt.figura(1)
+fig = plt.figure(1)
 
 a = fig.add_subplot(2, 1, 1)
-a.plot( t, xa)
+a.stem( t, xa)
 a.set_xlabel("(a)")
 
 a = fig.add_subplot(2, 1, 2)
-a.radical (t, xd, "k-", "ko", "k-")
+plt.stem(t, xd)
 a.set_xlabel("(b)")
 
 plt.show ()

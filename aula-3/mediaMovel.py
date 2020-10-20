@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 sample_rate = 8000
-k = 8
+k = 16
 media_buf = np.zeros(k)
 
 with open("sweep_20_3600.pcm", 'rb') as f:
@@ -20,7 +20,7 @@ with open("sweep_20_3600.pcm", 'rb') as f:
         media_buf[1:k] = buf            #descloca
 
 # amostra de 100 ms
-t = np.arange(0, 0.1, 1 / sample_rate)
+t = np.arange(0, 5, 1 / sample_rate)
 
 ###############
 #   plot
