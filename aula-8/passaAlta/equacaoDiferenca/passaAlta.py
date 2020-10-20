@@ -2,8 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 tam = 8000
-entrada = np.zeros(3)
-saida = np.zeros(2)
+entrada = np.zeros(2)
+saida = 0
 
 Fc = 1000
 Fs = 8000
@@ -16,8 +16,8 @@ F1 = 2 * Fs
 
 # coeficientes
 a = F1/(F1+wc)
-b = (2*wc)/(F1+wc)
-c = (F1-wc) / (F1+wc)
+b = (wc -F1)/(F1+wc)
+
 
 
 with open('sweep_20_3600.pcm', 'rb') as f:
@@ -31,13 +31,9 @@ with open('sweep_20_3600.pcm', 'rb') as f:
     for i in range(data_len):
         entrada[0] = data_i[i]
 
-        m = a*entrada[0] - a*entrada[2] - b*saida[0] + c*saida[1]
-
-        saida[1:len(saida)] = saida[0:len(saida)-1]
-        saida[0] = m
-
-        data_o[i] = m
-        entrada[1:len(entrada)] = entrada[0:len(entrada) - 1]
+        saida = a * entrada[0] - a * entrada[1] - b * saida
+        data_o[i] = saida
+        entrada[1:2] = entrada[0:1]
 
 # amostra de 100 ms
 t = np.arange(0, data_len/tam, 1 / tam)
