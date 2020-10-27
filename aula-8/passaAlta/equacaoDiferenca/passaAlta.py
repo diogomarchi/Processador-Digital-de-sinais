@@ -5,7 +5,7 @@ tam = 8000
 entrada = np.zeros(2)
 saida = 0
 
-Fc = 1000
+Fc = 400
 Fs = 8000
 
 # calcula FC

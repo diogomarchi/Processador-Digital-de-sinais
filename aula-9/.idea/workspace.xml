@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7307306f-c37f-408d-b74f-8bb994f0eead" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackman.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funcaoSync.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hamming.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/windowed_design.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/windowed_sinc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula-8/passaAlta/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-8/passaAlta/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../aula-8/passaAlta/equacaoDiferenca/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-8/passaAlta/equacaoDiferenca/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-8/passaAlta/equacaoDiferenca/passaAlta.py" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-8/passaAlta/equacaoDiferenca/passaAlta.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-8/passaAlta/passaAltaSaida.pcm" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-8/passaAlta/passaAltaSaida.pcm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-8/passaAlta/polosEZeros/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-8/passaAlta/polosEZeros/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-8/passaAlta/polosEZeros/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-8/passaAlta/polosEZeros/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blackman.py" beforeDir="false" afterPath="$PROJECT_DIR$/blackman.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcaoSync.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcaoSync.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hamming.py" beforeDir="false" afterPath="$PROJECT_DIR$/hamming.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/funcaoSync.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="51">
+              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -34,17 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blackman.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hamming.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="153">
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -53,10 +45,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/windowed_sinc.py">
+        <entry file="file://$PROJECT_DIR$/hamming.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+            <state relative-caret-position="119">
+              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -67,7 +59,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/windowed_design.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="493">
               <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -91,11 +83,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/windowed_design.py" />
+        <option value="$PROJECT_DIR$/windowed_sinc.py" />
         <option value="$PROJECT_DIR$/funcaoSync.py" />
         <option value="$PROJECT_DIR$/blackman.py" />
         <option value="$PROJECT_DIR$/hamming.py" />
-        <option value="$PROJECT_DIR$/windowed_design.py" />
-        <option value="$PROJECT_DIR$/windowed_sinc.py" />
       </list>
     </option>
   </component>
@@ -126,6 +118,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -140,7 +133,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.windowed_design">
+  <component name="RunManager" selected="Python.hamming">
     <configuration name="blackman" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="aula-9" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -227,10 +220,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.windowed_design" />
         <item itemvalue="Python.hamming" />
         <item itemvalue="Python.blackman" />
         <item itemvalue="Python.funcaoSync" />
+        <item itemvalue="Python.windowed_design" />
       </list>
     </recent_temporary>
   </component>
@@ -251,12 +244,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -271,10 +264,21 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/windowed_sinc.py" />
+    <entry file="file://$PROJECT_DIR$/windowed_design.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/funcaoSync.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="51">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -283,35 +287,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blackman.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="31" />
+        <state relative-caret-position="153">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hamming.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/windowed_design.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/windowed_sinc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        <state relative-caret-position="119">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

@@ -2,10 +2,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 fc = 400
-M = 0.02
+M = 50
 
 # para calcular os valores
-i = np.arange(0, M, 0.01)
+i = np.arange(0, M, 0.00001)
 
 # função passa baixa
 w_i = 0.54 - 0.46 * np.cos(2*np.pi*i/M)

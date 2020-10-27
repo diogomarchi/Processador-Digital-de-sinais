@@ -3,11 +3,11 @@ import matplotlib.pyplot as plt
 import matplotlib.pyplot as plt
 
 fc = 400
-M = 0.02
+M = 50
 
 # para calcular os valores
-i = np.arange(0, M, 0.01)
-i2 = np.arange(-M/2, M/2, 0.01)
+i = np.arange(0, M, 0.00001)
+i2 = np.arange(-M/2, M/2, 0.00001)
 
 # função passa baixa
 w_i = 0.42 - 0.5 * np.cos(2*np.pi*i/M) - 0.08 * np.cos(4*np.pi*i/M)
