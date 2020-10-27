@@ -1,0 +1,20 @@
+existem dois tipos de filtro digitais, o filtro de separação e o filtro de restauração
+no filtro de separação, é quando o sinal está contaminado com interferencia, ruido, ou outro sinais
+o de restauração, é quando o sinal está distorcido peo caminho.
+
+filtro digital pode ter 1000 vezes melhor performace que um filtro analogico 
+é comum falar em dsp aud a entrada e saida do filtro está no dominio do tempo
+
+a forma mais direta de implemntar um filtro digital e pela convolução do sinal de entrada 
+com a resposta do impulso do filtro digital, chamado filtro karnel
+
+tem outra forma de implementar que é a recursiva.quando um filtro é implementado por convolução, cadaamostra d
+de saida é calculada por ponderada por amostra de entrada e adiciona depois.
+
+
+a forma recursiva, esa uma extensão, que tem valores previamente calculados pela saida.
+o filtro recursivo é definido pela coeficiente de recursão.o ponto importante é que todo
+o filtro é linear tem resposta ao impulso.
+
+é chamado de resposta ao impulso, quando a entrada é um impuslo.
+é chamado de step response, quando a entrada é um degrau
