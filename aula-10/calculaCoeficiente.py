@@ -3,6 +3,8 @@
  #resulting in 4900 samples of filtered data.
  #
 import numpy as np
+from scipy.signal import freqz
+import matplotlib.pyplot as plt
 
 fs = 8000
 fc = 400
@@ -11,11 +13,13 @@ bwn = bw / fs
 fcn = fc / fs
 
 M = 4 / bwn
+
 #create vector
-h = [M]
+h = np.zeros(int(M))
+tam = len(h)
 
 #Calculate the low-pass filter kernel via Eq. 16-4
-for i in M:
+for i in range(tam):
     if (i - M/2) == 0:
          h[i] = 2*np.pi*fcn
 
@@ -26,14 +30,32 @@ for i in M:
 
 #Normalize the low-pass filter kernel for
 soma = 0
-for i in 100: #'unity gain at DC
+for i in range(tam): #'unity gain at DC
     soma = soma + h[i]
 
 #garantindo que os valores estao entre 0 e 1
-for i in 100:
-    h[i] = h[1] / soma
+for i in range(tam):
+    h[i] = h[i] / soma
+
+[w, x] = freqz(1, h, worN=fs, fs=fs)
+
+###############
+#   plot
+plt.subplot(2, 1, 1)
+plt.plot(h, label="coeficientes")
+plt.legend()
+
+plt.subplot(2, 1, 2)
+plt.plot(w,20 * np.log10(abs(x)) ,label="resposta em frequencia")
+plt.legend()
+
+plt.show()
 
 
-#fazer para salvar esses coeficientes
-#obter resposta em frequencia
+#salvando em arquivo
+file_name = "coeficientesFiltro.pcm"
+with open(file_name, 'wb') as f:
+    for d in h:
+        f.write(d)
+
 
