@@ -37,23 +37,27 @@ for i in range(tam): #'unity gain at DC
 for i in range(tam):
     h[i] = h[i] / soma
 
+#inversão espectral para formar o passa alta
+h = -h
+h[int(M/2)] += 1
+
 [w, x] = freqz(1, h, worN=fs, fs=1)
 
 ###############
 #   plot
 plt.subplot(2, 1, 1)
-plt.plot(h, label="passa baixa")
+plt.plot(h, label="passa alta")
 plt.legend()
 
 plt.subplot(2, 1, 2)
-plt.plot(w, 20 * np.log10(abs(x)),label="resposta em frequencia")
+plt.plot(w, 20 * np.log10(abs(x)), label="resposta em frequencia")
 plt.legend()
 
 plt.show()
 
 
 #salvando em arquivo
-file_name = "passaBaixa.pcm"
+file_name = "passaAlta.pcm"
 with open(file_name, 'wb') as f:
     for d in h:
         f.write(d)
