@@ -37,16 +37,32 @@ for i in range(tam): #'unity gain at DC
 for i in range(tam):
     h[i] = h[i] / soma
 
-[w, x] = freqz(1, h, worN=fs, fs=1)
+with open("sweep_20_3600.pcm", 'rb') as f:
+    buf = f.read()
+    data_i = np.frombuffer(buf, dtype='int16')
+    data_len = len(data_i)
+
+    # replica do arquivo lido para salvar o resultado
+    data_o = np.convolve(h, data_i, 'same')
+    data_o = data_o.astype(dtype='int16')
+
+
+[w, x] = freqz(h, worN=fs, fs=1)
+
+# amostra de 100 ms
+t = np.arange(0, data_len/fs, 1 / fs)
 
 ###############
 #   plot
 plt.subplot(2, 1, 1)
-plt.plot(h, label="passa baixa")
+plt.plot(t, data_i[: len(t)], "k-", label="Input")
+plt.plot(t, data_o[: len(t)], label="Output")
 plt.legend()
+plt.xlabel("Time [s]")
+plt.ylabel("Amplitude")
 
 plt.subplot(2, 1, 2)
-plt.plot(w, 20 * np.log10(abs(x)),label="resposta em frequencia")
+plt.plot(w, 20 * np.log10(abs(x)), label="resposta em frequencia")
 plt.legend()
 
 plt.show()

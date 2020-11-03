@@ -77,7 +77,7 @@ plt.ylabel("Amplitude")
 t = np.arange(0, data_len/fs, 1 / fs)
 
 
-[w, x] = freqz(1, hFaixa, worN=fs, fs=1)
+[w, x] = freqz(hFaixa, worN=fs, fs=1)
 
 plt.subplot(2, 1, 2)
 plt.plot(w, abs(x), label="Passa faixa")
