@@ -42,9 +42,9 @@ hA[int(M/2)] += 1
 hB = gera_coef(M, fcPB)
 
 # filtro Passa faixa
-hPF2 = gera_coef(M, fcPB)        # passa baixa
+hPF2 = gera_coef(M, fcPA)        # passa baixa
 
-hPF1 = gera_coef(M, fcPA)        # passa alta
+hPF1 = gera_coef(M, fcPB)        # passa alta
 hPF1 = -hPF1
 hPF1[int(M/2)] += 1
 hPF = np.convolve(hPF1, hPF2)
