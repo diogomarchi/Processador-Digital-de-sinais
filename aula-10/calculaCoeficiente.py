@@ -69,9 +69,9 @@ plt.show()
 
 
 #salvando em arquivo
-file_name = "passaBaixa.pcm"
-with open(file_name, 'wb') as f:
+file_name = "passaBaixaCoef.dat"
+with open(file_name, 'w') as f:
     for d in h:
-        f.write(d)
+        f.write(str(d.astype(np.float16))+",\n")
 
 

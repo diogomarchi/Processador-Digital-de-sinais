@@ -1,82 +1,58 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+n = 160
+
+#carregando sistema desconhecido
+with open("passaBaixaCoef.dat", 'r') as f:
+    cof = f.read().replace("\n", "").split(",")
+    cof.remove('')
+    desconhecido = np.asarray(cof, dtype=np.float16)
+
 #carregando ruido branco
 with open("wn.pcm", 'rb') as f:
     buf = f.read()
-    x = np.frombuffer(buf, dtype='int16')
-    data_lenWn = len(x)
+    data_i = np.frombuffer(buf, dtype='int16')
+    data_lenWn = len(data_i)
+    xn = data_i[0:n]
 
-print(data_lenWn)
-#carregando sistema desconhecido
-with open("passaBaixa.pcm", 'rb') as f:
-    buf = f.read()
-    w0 = np.frombuffer(buf, dtype='int16')
-    data_lenPb = len(w0)
+    dn = desconhecido.T * xn
 
 #mi
 numero = 0.000000000005
 
 #tamanho do filtro adaptativo
-tam_filtro = data_lenPb
+tam_filtro = len(desconhecido)
 
 #numero de interação pelo tamanho do ruido branco
-n_inter = data_lenWn
+n_inter = 200000
 
 # Vetores utilizados
-wn = np.zeros(tam_filtro);			# Coeficientes de W(z)
-x_linhan = np.zeros(tam_filtro);	# Vetor de entrada filtrado por F^(z)
+wn = np.zeros(tam_filtro, dtype=np.float64)			# Coeficientes de W(z)
 
-
-#vetor de erro
-erro_salva = np.zeros(n_inter)
-#vetor para sinal de controle
-y_salva = np.zeros(n_inter)
-#plotar sinal dos coeficientes
-w_salva = np.zeros(n_inter)
-
-
-
+# aplica coefs sistema desconhecido
+dn = desconhecido.T * xn
+erro = []
 
 for i in range(n_inter):
 
-    x_new = x[i]
-
-    x_linhan[0] = x_new
-
-    y = 0
     # filtragem
-    for j in range(tam_filtro):
-        y = y + x_linhan[j] * wn[j]
-    y_salva[i] = y
+    yn = wn.T * xn
 
+    # calculo do erro
+    ee = dn - yn
 
-    d = 0
-    #saida desejada
-    for j in range(tam_filtro):
-        d = d + x_linhan[j] * w0[j]
-
-
-
-    #calculo do erro
-    erro = d - y
-    #salvando o erro no vetor
-    erro_salva[i] = erro
+    erro.append(sum(abs(ee)))
+    print(erro[i])
 
     #atualizando coeficientes
-    for j in range(tam_filtro):
-        wn[j] = wn[j] + numero * erro * x_linhan[j]
-
-    #w_salva[i] = wn
-    #atualiza vetor x_linha
-    for j in range(tam_filtro-1):
-        x_linhan[tam_filtro-1-j] = x_linhan[tam_filtro-1-j-1]
+    wn = wn + 2 * numero * ee * xn
 
 
 
 # Plotando os sinais de erro e de controle
 plt.figure(1)
-plt.plot(erro_salva)
+plt.plot(erro)
 plt.grid
 plt.title('Sinal de Erro');
 plt.xlabel('Amostras');
