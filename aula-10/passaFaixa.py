@@ -89,9 +89,9 @@ plt.show()
 
 
 #salvando em arquivo
-file_name = "passaFaixa.pcm"
-with open(file_name, 'wb') as f:
-    for d in data_o:
-        f.write(d)
+file_name = "passaFaixa.dat"
+with open(file_name, 'w') as f:
+    for d in hFaixa:
+        f.write(str(d.astype(np.float16))+",\n")
 
 

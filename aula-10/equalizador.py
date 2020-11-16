@@ -97,9 +97,9 @@ plt.legend()
 plt.xlabel("Freq")
 plt.ylabel("Amplitude")
 
-with open("equalizador.pcm", 'wb') as f:
-    for d in data_o:
-        f.write(d)
+with open("equalizador.dat", 'w') as f:
+    for d in h:
+        f.write(str(d.astype(np.float16))+",\n")
 
 plt.grid()
 plt.show()
