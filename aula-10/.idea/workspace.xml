@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5cc61168-dcb3-42c2-a65a-ca4581f21a42" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculaCoeficientePA.py" beforeDir="false" afterPath="$PROJECT_DIR$/calculaCoeficientePA.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/equalizador.py" beforeDir="false" afterPath="$PROJECT_DIR$/equalizador.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/passaFaixa.py" beforeDir="false" afterPath="$PROJECT_DIR$/passaFaixa.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula-11/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-11/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-12/Equalizador_C/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-12/Equalizador_C/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +31,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.passaFaixa">
+  <component name="RunManager" selected="Python.equalizador">
     <configuration name="calculaCoeficiente" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="aula-10" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -120,10 +118,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.equalizador" />
         <item itemvalue="Python.passaFaixa" />
         <item itemvalue="Python.calculaCoeficientePA" />
         <item itemvalue="Python.calculaCoeficiente" />
-        <item itemvalue="Python.equalizador" />
       </list>
     </recent_temporary>
   </component>
@@ -146,22 +144,22 @@
       <screen x="0" y="0" width="1366" height="727" />
     </state>
     <state x="466" y="122" width="426" height="494" key="FileChooserDialogImpl/0.0.1366.727@0.0.1366.727" timestamp="1605487085376" />
-    <state width="1345" height="167" key="GridCell.Tab.0.bottom" timestamp="1605533857047">
+    <state width="1345" height="167" key="GridCell.Tab.0.bottom" timestamp="1605536221456">
       <screen x="0" y="0" width="1366" height="727" />
     </state>
-    <state width="1345" height="167" key="GridCell.Tab.0.bottom/0.0.1366.727@0.0.1366.727" timestamp="1605533857047" />
-    <state width="1345" height="167" key="GridCell.Tab.0.center" timestamp="1605533857043">
+    <state width="1345" height="167" key="GridCell.Tab.0.bottom/0.0.1366.727@0.0.1366.727" timestamp="1605536221456" />
+    <state width="1345" height="167" key="GridCell.Tab.0.center" timestamp="1605536221453">
       <screen x="0" y="0" width="1366" height="727" />
     </state>
-    <state width="1345" height="167" key="GridCell.Tab.0.center/0.0.1366.727@0.0.1366.727" timestamp="1605533857043" />
-    <state width="1345" height="167" key="GridCell.Tab.0.left" timestamp="1605533857043">
+    <state width="1345" height="167" key="GridCell.Tab.0.center/0.0.1366.727@0.0.1366.727" timestamp="1605536221453" />
+    <state width="1345" height="167" key="GridCell.Tab.0.left" timestamp="1605536221453">
       <screen x="0" y="0" width="1366" height="727" />
     </state>
-    <state width="1345" height="167" key="GridCell.Tab.0.left/0.0.1366.727@0.0.1366.727" timestamp="1605533857043" />
-    <state width="1345" height="167" key="GridCell.Tab.0.right" timestamp="1605533857045">
+    <state width="1345" height="167" key="GridCell.Tab.0.left/0.0.1366.727@0.0.1366.727" timestamp="1605536221453" />
+    <state width="1345" height="167" key="GridCell.Tab.0.right" timestamp="1605536221453">
       <screen x="0" y="0" width="1366" height="727" />
     </state>
-    <state width="1345" height="167" key="GridCell.Tab.0.right/0.0.1366.727@0.0.1366.727" timestamp="1605533857045" />
+    <state width="1345" height="167" key="GridCell.Tab.0.right/0.0.1366.727@0.0.1366.727" timestamp="1605536221453" />
     <state x="187" y="0" key="SettingsEditor" timestamp="1605487005678">
       <screen x="0" y="0" width="1366" height="727" />
     </state>
