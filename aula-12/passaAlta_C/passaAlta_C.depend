@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1605571543 source:/home/diogomarchi/Documentos/FACULDADE-MATERIAS/Processador-Digital-de-sinais/aula-12/passaAlta_C/main.c
+	<stdio.h>
+	<fcntl.h>
+	"passaAlta.dat"
+
+1605571713 /home/diogomarchi/Documentos/FACULDADE-MATERIAS/Processador-Digital-de-sinais/aula-12/passaAlta_C/passaAlta.dat
+

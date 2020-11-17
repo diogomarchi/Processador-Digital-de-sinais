@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1605572354 source:/home/diogomarchi/Documentos/FACULDADE-MATERIAS/Processador-Digital-de-sinais/aula-12/passaFaixa_C/main.c
+	<stdio.h>
+	<fcntl.h>
+	"passaFaixa.dat"
+
+1605572218 /home/diogomarchi/Documentos/FACULDADE-MATERIAS/Processador-Digital-de-sinais/aula-12/passaFaixa_C/passaFaixa.dat
+

@@ -74,4 +74,8 @@ with open(file_name, 'w') as f:
     for d in h:
         f.write(str(d.astype(np.float16))+",\n")
 
+with open("passaBaixaPCM.pcm", 'wb') as f:
+    for d in data_o:
+        f.write(d)
+
 

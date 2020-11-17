@@ -53,17 +53,6 @@ hPF = np.convolve(hPF1, hPF2)
 g_pb = 0.7
 g_pf = 0.6
 g_pa = 0.5
-with open("coefPassaFaixaEq", 'w') as f:
-    for d in hPF:
-        f.write(str(d.astype(np.float16))+",\n")
-
-with open("coefPassaBaixaEq", 'w') as f:
-    for d in hB:
-        f.write(str(d.astype(np.float16))+",\n")
-
-with open("coefPassaAltaEq", 'w') as f:
-    for d in hA:
-        f.write(str(d.astype(np.float16))+",\n")
 
 with open("sweep_20_3600.pcm", 'rb') as f:
     buf = f.read()
@@ -79,7 +68,7 @@ with open("sweep_20_3600.pcm", 'rb') as f:
 
     data_o = data_o.astype(dtype='int16')
 
-
+print(data_len)
 # amostra de 100 ms
 t = np.arange(0, data_len/fs, 1 / fs)
 
@@ -107,9 +96,21 @@ plt.legend()
 plt.xlabel("Freq")
 plt.ylabel("Amplitude")
 
+plt.grid()
+plt.show()
+
+with open("coefPassaFaixaEq.dat", 'w') as f:
+    for d in hPF:
+        f.write(str(d.astype(np.float16))+",\n")
+
+with open("coefPassaBaixaEq.dat", 'w') as f:
+    for d in hB:
+        f.write(str(d.astype(np.float16))+",\n")
+
+with open("coefPassaAltaEq.dat ", 'w') as f:
+    for d in hA:
+        f.write(str(d.astype(np.float16))+",\n")
+
 with open("equalizador.pcm", 'wb') as f:
     for d in data_o:
         f.write(d)
-
-plt.grid()
-plt.show()

@@ -30,7 +30,7 @@ for i in range(tam):
 
 
 #garantindo que os valores estao entre 0 e 1
-    h = h / np.sum(h)
+h = h / np.sum(h)
 
 #inversão espectral para formar o passa alta
 h = -h
@@ -67,10 +67,16 @@ plt.grid()
 plt.show()
 
 
-#salvando em arquivo
+#salvando em arquivo coeficientes
 file_name = "passaAlta.dat"
 with open(file_name, 'w') as f:
     for d in h:
         f.write(str(d.astype(np.float16))+",\n")
+
+#salvando em arquivo
+file_name = "passaAltaPCM.pcm"
+with open(file_name, 'wb') as f:
+    for d in data_o:
+        f.write(d)
 
 

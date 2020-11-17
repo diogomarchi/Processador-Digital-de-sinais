@@ -48,8 +48,6 @@ for i in range(n_inter):
     #atualizando coeficientes
     wn = wn + 2 * numero * ee * xn
 
-
-
 # Plotando os sinais de erro e de controle
 plt.figure(1)
 plt.plot(erro)
@@ -64,3 +62,16 @@ plt.grid
 plt.title('Comportamento dos Coefs');
 plt.xlabel('Amostras');
 plt.show()
+
+# salva resultado do filtro
+file_name = "resultado_coefs.pcm"
+with open(file_name, 'wb') as f:
+    yn = np.convolve(wn, data_i, mode="same")
+    for d in yn:
+        f.write(d.astype(np.float16))
+
+# salva coeficientes
+coefs_name = "coef_adptativo.dat"
+with open(coefs_name, 'w') as f:
+    for d in wn:
+        f.write(str(d.astype(np.float16))+",\n")

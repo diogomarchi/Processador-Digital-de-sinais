@@ -11,7 +11,7 @@ George
 
 int main() {
   FILE * in_file, * out_file;
-  int i, n, n_amost;
+  int n_amost;
 
   short entrada, saida;
   short sample[NSAMPLES] = {
@@ -21,23 +21,23 @@ int main() {
   float yA = 0, yB = 0, yF = 0, y = 0;
 
   // ganhos dos filtros
-  float g_pb = 0.5;
+  float g_pb = 0.7;
   float g_pf = 0.6;
-  float g_pa = 0.7;
+  float g_pa = 0.5;
 
   //Carregando os coeficientes do filtro pb
   float coef_pb[NSAMPLES] = {
-        #include "passaBaixaCoef.dat" // NSAMPLES
+        #include "coefPassaBaixaEq.dat" // NSAMPLES
   };
 
   //Carregando os coeficientes do filtro pb
   float coef_pf[NSAMPLES] = {
-        #include "passaFaixa.dat" // NSAMPLES
+        #include "coefPassaFaixaEq.dat" // NSAMPLES
   };
 
   //Carregando os coeficientes do filtro pb
   float coef_pa[NSAMPLES] = {
-        #include "passaAlta.dat" // NSAMPLES
+        #include "coefPassaAltaEq.dat" // NSAMPLES
   };
 
   /* abre os arquivos de entrada e saida */
@@ -51,7 +51,7 @@ int main() {
   }
 
   // zera vetor de amostras
-  for (i = 0; i < NSAMPLES; i++) {
+  for (int i = 0; i < NSAMPLES; i++) {
     sample[i] = 0;
   }
 
@@ -59,29 +59,29 @@ int main() {
   do {
 
     //zera saída do filtro
-    yA = 0, yB = 0, yF = 0;
+    yA = 0, yB = 0, yF = 0, y = 0;
 
     //lê dado do arquivo
     n_amost = fread( & entrada, sizeof(short), 1, in_file);
     sample[0] = entrada;
 
     //Convolução e acumulação PB
-    for (n = 0; n < NSAMPLES; n++) {
+    for (int n = 0; n < NSAMPLES; n++) {
       yB += g_pb * coef_pb[n] * sample[n];
     }
 
     //Convolução e acumulação PF
-    for (n = 0; n < NSAMPLES; n++) {
+    for (int n = 0; n < NSAMPLES; n++) {
       yF += g_pf* coef_pf[n] * sample[n];
     }
 
     //Convolução e acumulação PA
-    for (n = 0; n < NSAMPLES; n++) {
+    for (int n = 0; n < NSAMPLES; n++) {
       yA += g_pa * coef_pa[n] * sample[n];
     }
 
     //desloca amostra
-    for (n = NSAMPLES - 1; n > 0; n--) {
+    for (int n = NSAMPLES - 1; n > 0; n--) {
       sample[n] = sample[n - 1];
     }
 

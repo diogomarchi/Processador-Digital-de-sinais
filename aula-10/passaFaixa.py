@@ -94,4 +94,8 @@ with open(file_name, 'w') as f:
     for d in hFaixa:
         f.write(str(d.astype(np.float16))+",\n")
 
+with open("passaFaixaPCM.pcm", 'wb') as f:
+    for d in data_o:
+        f.write(d)
+
 
