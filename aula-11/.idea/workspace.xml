@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d78febb8-3d1b-49c0-8a64-4376d39f36b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../aula-10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-10/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula-12/Equalizador_C/Equalizador_C.depend" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-12/Equalizador_C/Equalizador_C.depend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula-12/adaptativo_C/coef_adaptativo.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula-12/adaptativo_C/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-12/adaptativo_C/main.c" afterDir="false" />
-    </list>
+    <list default="true" id="d78febb8-3d1b-49c0-8a64-4376d39f36b8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +24,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../aula-12" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
@@ -76,10 +70,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="466" y="122" width="426" height="494" key="FileChooserDialogImpl" timestamp="1605615124222">
+    <state x="466" y="122" width="426" height="494" key="FileChooserDialogImpl" timestamp="1605621024995">
       <screen x="0" y="0" width="1366" height="727" />
     </state>
-    <state x="466" y="122" width="426" height="494" key="FileChooserDialogImpl/0.0.1366.727@0.0.1366.727" timestamp="1605615124222" />
+    <state x="466" y="122" width="426" height="494" key="FileChooserDialogImpl/0.0.1366.727@0.0.1366.727" timestamp="1605621024995" />
     <state width="1345" height="145" key="GridCell.Tab.0.bottom" timestamp="1605615125318">
       <screen x="0" y="0" width="1366" height="727" />
     </state>

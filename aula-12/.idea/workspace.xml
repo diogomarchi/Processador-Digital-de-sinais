@@ -20,13 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bf058d8-1d00-4043-b153-7254e15f5f05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../aula-10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-10/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../aula-11/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-11/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equalizador_C/bin/Debug/Equalizador_C" beforeDir="false" afterPath="$PROJECT_DIR$/Equalizador_C/bin/Debug/Equalizador_C" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equalizador_C/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Equalizador_C/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equalizador_C/obj/Debug/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/Equalizador_C/obj/Debug/main.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equalizador_C/resultado_filtro_c.pcm" beforeDir="false" afterPath="$PROJECT_DIR$/Equalizador_C/resultado_filtro_c.pcm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cancelaEco.py" beforeDir="false" afterPath="$PROJECT_DIR$/cancelaEco.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coef_adptativo_eco.dat" beforeDir="false" afterPath="$PROJECT_DIR$/coef_adptativo_eco.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resultado_coefs_eco.pcm" beforeDir="false" afterPath="$PROJECT_DIR$/resultado_coefs_eco.pcm" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +49,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../aula-10" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
@@ -110,25 +108,25 @@
       <screen x="0" y="0" width="1366" height="727" />
     </state>
     <state x="466" y="122" width="426" height="494" key="FileChooserDialogImpl/0.0.1366.727@0.0.1366.727" timestamp="1605615553441" />
-    <state width="1345" height="169" key="GridCell.Tab.0.bottom" timestamp="1605578721421">
+    <state width="1345" height="169" key="GridCell.Tab.0.bottom" timestamp="1605626052154">
       <screen x="0" y="0" width="1366" height="727" />
     </state>
-    <state width="1345" height="169" key="GridCell.Tab.0.bottom/0.0.1366.727@0.0.1366.727" timestamp="1605578721421" />
-    <state width="1345" height="169" key="GridCell.Tab.0.center" timestamp="1605578721420">
+    <state width="1345" height="169" key="GridCell.Tab.0.bottom/0.0.1366.727@0.0.1366.727" timestamp="1605626052154" />
+    <state width="1345" height="169" key="GridCell.Tab.0.center" timestamp="1605626052154">
       <screen x="0" y="0" width="1366" height="727" />
     </state>
-    <state width="1345" height="169" key="GridCell.Tab.0.center/0.0.1366.727@0.0.1366.727" timestamp="1605578721420" />
-    <state width="1345" height="169" key="GridCell.Tab.0.left" timestamp="1605578721420">
+    <state width="1345" height="169" key="GridCell.Tab.0.center/0.0.1366.727@0.0.1366.727" timestamp="1605626052154" />
+    <state width="1345" height="169" key="GridCell.Tab.0.left" timestamp="1605626052153">
       <screen x="0" y="0" width="1366" height="727" />
     </state>
-    <state width="1345" height="169" key="GridCell.Tab.0.left/0.0.1366.727@0.0.1366.727" timestamp="1605578721420" />
-    <state width="1345" height="169" key="GridCell.Tab.0.right" timestamp="1605578721420">
+    <state width="1345" height="169" key="GridCell.Tab.0.left/0.0.1366.727@0.0.1366.727" timestamp="1605626052153" />
+    <state width="1345" height="169" key="GridCell.Tab.0.right" timestamp="1605626052154">
       <screen x="0" y="0" width="1366" height="727" />
     </state>
-    <state width="1345" height="169" key="GridCell.Tab.0.right/0.0.1366.727@0.0.1366.727" timestamp="1605578721420" />
-    <state x="187" y="0" key="SettingsEditor" timestamp="1605577270754">
+    <state width="1345" height="169" key="GridCell.Tab.0.right/0.0.1366.727@0.0.1366.727" timestamp="1605626052154" />
+    <state x="187" y="0" key="SettingsEditor" timestamp="1605623807609">
       <screen x="0" y="0" width="1366" height="727" />
     </state>
-    <state x="187" y="0" key="SettingsEditor/0.0.1366.727@0.0.1366.727" timestamp="1605577270754" />
+    <state x="187" y="0" key="SettingsEditor/0.0.1366.727@0.0.1366.727" timestamp="1605623807609" />
   </component>
 </project>
