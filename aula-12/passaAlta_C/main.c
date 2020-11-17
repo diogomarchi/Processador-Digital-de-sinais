@@ -5,7 +5,7 @@
 
 int main() {
   FILE * in_file, * out_file;
-  int i, n, n_amost;
+  int i, n, n_amost, n_inter = 200000;
 
   short entrada, saida;
   short sample[NSAMPLES] = {
@@ -59,7 +59,7 @@ int main() {
     //escreve no arquivo de saída
     fwrite( & saida, sizeof(short), 1, out_file);
 
-  } while (n_amost);
+  }while(n_amost);
 
   //fecha os arquivos de entrada de saída
   fclose(out_file);

@@ -6,17 +6,18 @@
 int main() {
   FILE * in_file, * out_file;
   int i, n, n_amost;
+  float mi = 0.00000000001;
+  double y = 0.0, dn = 0.0, erro = 0.0;
+
 
   short entrada, saida;
-  short sample[NSAMPLES] = {
-    0x0
-  };
+  short sample[NSAMPLES];
 
-  float y = 0;
+  double wn[NSAMPLES];
 
   //Carregando os coeficientes do filtro média móvel
   float coef[NSAMPLES] = {
-        #include "coef_adaptativo.dat" // NSAMPLES
+        #include "passaAlta.dat" // NSAMPLES
   };
 
   /* abre os arquivos de entrada e saida */
@@ -32,34 +33,48 @@ int main() {
   // zera vetor de amostras
   for (i = 0; i < NSAMPLES; i++) {
     sample[i] = 0;
+    wn[i] = 0.0;
   }
 
   // execução do filtro
-  do {
+  do{
 
     //zera saída do filtro
     y = 0;
-
+    dn = 0;
     //lê dado do arquivo
     n_amost = fread( & entrada, sizeof(short), 1, in_file);
     sample[0] = entrada;
 
-    //Convolução e acumulação
+    //Convolução da saida esperada
     for (n = 0; n < NSAMPLES; n++) {
-      y += coef[n] * sample[n];
+      dn += coef[n] * sample[n];
+    }
+
+    // convolução da saida esperada
+    for (int j = 0; j < NSAMPLES; j++) {
+        y += wn[j] * sample[j];
+    }
+
+
+    erro = dn - y;
+
+    //desloca amostra
+    for (n = 0; n < NSAMPLES; n++) {
+        wn[n] = wn[n] + 2.0 * mi * erro * sample[n];
     }
 
     //desloca amostra
     for (n = NSAMPLES - 1; n > 0; n--) {
-      sample[n] = sample[n - 1];
+        sample[n] = sample[n - 1];
     }
 
-    saida = (short) y;
+    saida = (short) erro;
 
     //escreve no arquivo de saída
     fwrite( & saida, sizeof(short), 1, out_file);
 
-  } while (n_amost);
+  }while(n_amost);
 
   //fecha os arquivos de entrada de saída
   fclose(out_file);

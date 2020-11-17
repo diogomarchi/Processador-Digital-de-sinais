@@ -4,11 +4,9 @@
     <list default="true" id="d78febb8-3d1b-49c0-8a64-4376d39f36b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../aula-10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-10/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula-12/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-12/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula-12/Equalizador_C/bin/Debug/Equalizador_C" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-12/Equalizador_C/bin/Debug/Equalizador_C" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula-12/Equalizador_C/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-12/Equalizador_C/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula-12/Equalizador_C/obj/Debug/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-12/Equalizador_C/obj/Debug/main.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aula-12/Equalizador_C/resultado_filtro_c.pcm" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-12/Equalizador_C/resultado_filtro_c.pcm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-12/Equalizador_C/Equalizador_C.depend" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-12/Equalizador_C/Equalizador_C.depend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-12/adaptativo_C/coef_adaptativo.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-12/adaptativo_C/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-12/adaptativo_C/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +30,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../aula-12" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
