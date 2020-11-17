@@ -21,9 +21,9 @@ int main() {
   float yA = 0, yB = 0, yF = 0, y = 0;
 
   // ganhos dos filtros
-  float g_pb = 0.7;
-  float g_pf = 0.6;
-  float g_pa = 0.5;
+  float g_pb = 0;
+  float g_pf = 1;
+  float g_pa = 0;
 
   //Carregando os coeficientes do filtro pb
   float coef_pb[NSAMPLES] = {
@@ -67,18 +67,21 @@ int main() {
 
     //Convolução e acumulação PB
     for (int n = 0; n < NSAMPLES; n++) {
-      yB += g_pb * coef_pb[n] * sample[n];
+      yB += coef_pb[n] * sample[n];
     }
+    yB = yB * g_pb;
 
     //Convolução e acumulação PF
     for (int n = 0; n < NSAMPLES; n++) {
-      yF += g_pf* coef_pf[n] * sample[n];
+      yF += coef_pf[n] * sample[n];
     }
+    yF = yF * g_pf;
 
     //Convolução e acumulação PA
     for (int n = 0; n < NSAMPLES; n++) {
-      yA += g_pa * coef_pa[n] * sample[n];
+      yA += coef_pa[n] * sample[n];
     }
+    yA = yA * g_pa;
 
     //desloca amostra
     for (int n = NSAMPLES - 1; n > 0; n--) {

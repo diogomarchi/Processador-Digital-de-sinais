@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1605571409 source:/home/diogomarchi/Documentos/FACULDADE-MATERIAS/Processador-Digital-de-sinais/aula-12/passaBaixa_C/main.c
+	<stdio.h>
+	<fcntl.h>
+	"passaBaixaCoef.dat"
+
+1605487074 /home/diogomarchi/Documentos/FACULDADE-MATERIAS/Processador-Digital-de-sinais/aula-12/passaBaixa_C/passaBaixaCoef.dat
+
