@@ -21,9 +21,9 @@ int main() {
   float yA = 0, yB = 0, yF = 0, y = 0;
 
   // ganhos dos filtros
-  float g_pb = 0;
-  float g_pf = 1;
-  float g_pa = 0;
+  float g_pb = 0.5;
+  float g_pf = 0.7;
+  float g_pa = 0.3;
 
   //Carregando os coeficientes do filtro pb
   float coef_pb[NSAMPLES] = {
@@ -45,7 +45,7 @@ int main() {
     printf("\nErro: Nao abriu o arquivo de entrada\n");
     return 0;
   }
-  if ((out_file = fopen("resultado_filtro_c.pcm", "wb")) == NULL) {
+  if ((out_file = fopen("resultado_filtro_cWALTER.pcm", "wb")) == NULL) {
     printf("\nErro: Nao abriu o arquivo de saida\n");
     return 0;
   }

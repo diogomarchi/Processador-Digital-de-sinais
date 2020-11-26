@@ -62,7 +62,7 @@ int main() {
     erro = entrada_near - y;         // calculo do erro
 
     for (n = 0; n < NSAMPLES; n++) { // atualiza coefs
-        coef[n] = coef[n] + 2.0 * 0.00000000001 * erro * sample_far[n];
+        coef[n] = coef[n] + 2.0 * 0.000000000009 * erro * sample_far[n];
     }
 
     //desloca amostra

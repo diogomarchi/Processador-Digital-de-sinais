@@ -36,7 +36,7 @@ h = h / np.sum(h)
 h = -h
 h[int(M/2)] += 1
 
-with open("sweep_20_3600.pcm", 'rb') as f:
+with open("seno_400Hz.pcm", 'rb') as f:
     buf = f.read()
     data_i = np.frombuffer(buf, dtype='int16')
     data_len = len(data_i)
@@ -60,7 +60,8 @@ plt.xlabel("Time [s]")
 plt.ylabel("Amplitude")
 
 plt.subplot(2, 1, 2)
-plt.plot(w, 20 * np.log10(abs(x)), label="resposta em frequencia")
+#plt.plot(w, 20 * np.log10(abs(x)), label="resposta em frequencia")
+plt.plot(w, abs(x), label="resposta em frequencia")
 plt.legend()
 
 plt.grid()
@@ -74,7 +75,7 @@ with open(file_name, 'w') as f:
         f.write(str(d.astype(np.float16))+",\n")
 
 #salvando em arquivo
-file_name = "passaAltaPCM.pcm"
+file_name = "passaAltaPCMSeno.pcm"
 with open(file_name, 'wb') as f:
     for d in data_o:
         f.write(d)

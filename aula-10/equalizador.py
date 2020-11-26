@@ -47,12 +47,12 @@ hPF2 = gera_coef(M, fcPA)        # passa baixa
 hPF1 = gera_coef(M, fcPB)        # passa alta
 hPF1 = -hPF1
 hPF1[int(M/2)] += 1
-hPF = np.convolve(hPF1, hPF2)
+hPF = np.convolve(hPF1, hPF2, 'same')
 
 # ganhos
-g_pb = 0.7
-g_pf = 0.6
-g_pa = 0.5
+g_pb = 0
+g_pf = 1
+g_pa = 0
 
 with open("sweep_20_3600.pcm", 'rb') as f:
     buf = f.read()

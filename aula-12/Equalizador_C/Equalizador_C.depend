@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1605616365 source:/home/diogomarchi/Documentos/FACULDADE-MATERIAS/Processador-Digital-de-sinais/aula-12/Equalizador_C/main.c
+1606356190 source:/home/diogomarchi/Documentos/FACULDADE-MATERIAS/Processador-Digital-de-sinais/aula-12/Equalizador_C/main.c
 	<stdio.h>
 	<fcntl.h>
 	"coefPassaBaixaEq.dat"
@@ -8,7 +8,7 @@
 
 1605569737 /home/diogomarchi/Documentos/FACULDADE-MATERIAS/Processador-Digital-de-sinais/aula-12/Equalizador_C/coefPassaBaixaEq.dat
 
-1605616297 /home/diogomarchi/Documentos/FACULDADE-MATERIAS/Processador-Digital-de-sinais/aula-12/Equalizador_C/coefPassaFaixaEq.dat
+1606356449 /home/diogomarchi/Documentos/FACULDADE-MATERIAS/Processador-Digital-de-sinais/aula-12/Equalizador_C/coefPassaFaixaEq.dat
 
 1605569737 /home/diogomarchi/Documentos/FACULDADE-MATERIAS/Processador-Digital-de-sinais/aula-12/Equalizador_C/coefPassaAltaEq.dat
 

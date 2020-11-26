@@ -3,6 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="5cc61168-dcb3-42c2-a65a-ca4581f21a42" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculaCoeficiente.py" beforeDir="false" afterPath="$PROJECT_DIR$/calculaCoeficiente.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculaCoeficientePA.py" beforeDir="false" afterPath="$PROJECT_DIR$/calculaCoeficientePA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coefPassaFaixaEq.dat" beforeDir="false" afterPath="$PROJECT_DIR$/coefPassaFaixaEq.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equalizador.pcm" beforeDir="false" afterPath="$PROJECT_DIR$/equalizador.pcm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equalizador.py" beforeDir="false" afterPath="$PROJECT_DIR$/equalizador.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-11/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-11/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-12/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-12/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-12/Equalizador_C/Equalizador_C.depend" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-12/Equalizador_C/Equalizador_C.depend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-12/Equalizador_C/Equalizador_C.layout" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-12/Equalizador_C/Equalizador_C.layout" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-12/Equalizador_C/bin/Debug/Equalizador_C" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-12/Equalizador_C/bin/Debug/Equalizador_C" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-12/Equalizador_C/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-12/Equalizador_C/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-12/Equalizador_C/obj/Debug/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-12/Equalizador_C/obj/Debug/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-12/Equalizador_C/resultado_filtro_c.pcm" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-12/Equalizador_C/resultado_filtro_c.pcm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-12/adaptativo_C/adaptativo_C.depend" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-12/adaptativo_C/adaptativo_C.depend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-12/adaptativo_C/adaptativo_C.layout" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-12/adaptativo_C/adaptativo_C.layout" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-12/cancelamentoEco_C/bin/Debug/cancelamentoEco_C" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-12/cancelamentoEco_C/bin/Debug/cancelamentoEco_C" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-12/cancelamentoEco_C/cancelamentoEco_C.layout" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-12/cancelamentoEco_C/cancelamentoEco_C.layout" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-12/cancelamentoEco_C/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-12/cancelamentoEco_C/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-12/cancelamentoEco_C/obj/Debug/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-12/cancelamentoEco_C/obj/Debug/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula-12/cancelamentoEco_C/resultado_filtro_c.pcm" beforeDir="false" afterPath="$PROJECT_DIR$/../aula-12/cancelamentoEco_C/resultado_filtro_c.pcm" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +46,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../aula-11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.equalizador">
@@ -118,8 +138,8 @@
       <list>
         <item itemvalue="Python.equalizador" />
         <item itemvalue="Python.calculaCoeficiente" />
-        <item itemvalue="Python.passaFaixa" />
         <item itemvalue="Python.calculaCoeficientePA" />
+        <item itemvalue="Python.passaFaixa" />
       </list>
     </recent_temporary>
   </component>
@@ -142,22 +162,22 @@
       <screen x="0" y="0" width="1366" height="727" />
     </state>
     <state x="466" y="122" width="426" height="494" key="FileChooserDialogImpl/0.0.1366.727@0.0.1366.727" timestamp="1605618069834" />
-    <state width="1345" height="167" key="GridCell.Tab.0.bottom" timestamp="1605618091847">
+    <state width="1345" height="167" key="GridCell.Tab.0.bottom" timestamp="1606356558879">
       <screen x="0" y="0" width="1366" height="727" />
     </state>
-    <state width="1345" height="167" key="GridCell.Tab.0.bottom/0.0.1366.727@0.0.1366.727" timestamp="1605618091847" />
-    <state width="1345" height="167" key="GridCell.Tab.0.center" timestamp="1605618091846">
+    <state width="1345" height="167" key="GridCell.Tab.0.bottom/0.0.1366.727@0.0.1366.727" timestamp="1606356558879" />
+    <state width="1345" height="167" key="GridCell.Tab.0.center" timestamp="1606356558877">
       <screen x="0" y="0" width="1366" height="727" />
     </state>
-    <state width="1345" height="167" key="GridCell.Tab.0.center/0.0.1366.727@0.0.1366.727" timestamp="1605618091846" />
-    <state width="1345" height="167" key="GridCell.Tab.0.left" timestamp="1605618091845">
+    <state width="1345" height="167" key="GridCell.Tab.0.center/0.0.1366.727@0.0.1366.727" timestamp="1606356558877" />
+    <state width="1345" height="167" key="GridCell.Tab.0.left" timestamp="1606356558876">
       <screen x="0" y="0" width="1366" height="727" />
     </state>
-    <state width="1345" height="167" key="GridCell.Tab.0.left/0.0.1366.727@0.0.1366.727" timestamp="1605618091845" />
-    <state width="1345" height="167" key="GridCell.Tab.0.right" timestamp="1605618091846">
+    <state width="1345" height="167" key="GridCell.Tab.0.left/0.0.1366.727@0.0.1366.727" timestamp="1606356558876" />
+    <state width="1345" height="167" key="GridCell.Tab.0.right" timestamp="1606356558877">
       <screen x="0" y="0" width="1366" height="727" />
     </state>
-    <state width="1345" height="167" key="GridCell.Tab.0.right/0.0.1366.727@0.0.1366.727" timestamp="1605618091846" />
+    <state width="1345" height="167" key="GridCell.Tab.0.right/0.0.1366.727@0.0.1366.727" timestamp="1606356558877" />
     <state x="187" y="0" key="SettingsEditor" timestamp="1605487005678">
       <screen x="0" y="0" width="1366" height="727" />
     </state>

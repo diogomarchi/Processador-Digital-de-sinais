@@ -37,7 +37,7 @@ for i in range(tam): #'unity gain at DC
 for i in range(tam):
     h[i] = h[i] / soma
 
-with open("sweep_20_3600.pcm", 'rb') as f:
+with open("seno_400Hz.pcm", 'rb') as f:
     buf = f.read()
     data_i = np.frombuffer(buf, dtype='int16')
     data_len = len(data_i)
@@ -62,7 +62,8 @@ plt.xlabel("Time [s]")
 plt.ylabel("Amplitude")
 
 plt.subplot(2, 1, 2)
-plt.plot(w, 20 * np.log10(abs(x)), label="resposta em frequencia")
+#plt.plot(w, 20 * np.log10(abs(x), label="resposta em frequencia")
+plt.plot(w, abs(x), label="resposta em frequencia")
 plt.legend()
 
 plt.show()
@@ -74,7 +75,7 @@ with open(file_name, 'w') as f:
     for d in h:
         f.write(str(d.astype(np.float16))+",\n")
 
-with open("passaBaixaPCM.pcm", 'wb') as f:
+with open("passaBaixaPCMSeno.pcm", 'wb') as f:
     for d in data_o:
         f.write(d)
 

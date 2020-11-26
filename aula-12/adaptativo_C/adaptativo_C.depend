@@ -1,8 +1,10 @@
 # depslib dependency file v1.0
-1605576090 source:/home/diogomarchi/Documentos/FACULDADE-MATERIAS/Processador-Digital-de-sinais/aula-12/adaptativo_C/main.c
+1605620779 source:/home/diogomarchi/Documentos/FACULDADE-MATERIAS/Processador-Digital-de-sinais/aula-12/adaptativo_C/main.c
 	<stdio.h>
 	<fcntl.h>
-	"coef_adaptativo.dat"
+	"passaAlta.dat"
 
 1605575759 /home/diogomarchi/Documentos/FACULDADE-MATERIAS/Processador-Digital-de-sinais/aula-12/adaptativo_C/coef_adaptativo.dat
+
+1605571713 /home/diogomarchi/Documentos/FACULDADE-MATERIAS/Processador-Digital-de-sinais/aula-12/adaptativo_C/passaAlta.dat
 
