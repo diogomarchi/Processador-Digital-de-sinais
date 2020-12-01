@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <cycles.h>
 
 
 #define NSAMPLES 160 // quantidade de coef
@@ -15,6 +16,8 @@ int main(int argc,char *argv[]) {
 	
   FILE * in_file, * out_file;
   int i, n, n_amost;
+  
+  cycle_stats_t stats;
 
   short entrada, saida;
   
